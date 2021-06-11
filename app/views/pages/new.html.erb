@@ -1,0 +1,14 @@
+<h1>Create a new Page</h1>
+
+<%= form_with model: @page, local: true do |form|%>
+    <%= form.label :title %>
+    <%= form.text_field :title%>
+    <br>
+    <%= form.label :body%>
+    <%= form.text_area :body%>
+    <br>
+    <%= form.label :slug%>
+    <%= form.text_field :slug%>
+    <br>
+    <%= form.submit 'Add Page'%>
+<% end %>

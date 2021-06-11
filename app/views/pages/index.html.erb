@@ -1,0 +1,10 @@
+<h1>Blog Pages</h1>
+
+
+<% @pages.each do |page| %>
+    <div>
+        <p><%= link_to page.title, page %></p>
+    </div>
+<% end %>
+
+<%= link_to 'Create new Page', new_page_path%>
